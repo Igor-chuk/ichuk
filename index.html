@@ -19,14 +19,55 @@
  	body {
     		color: #2F4F4F;
   	}
-</style>
+	header {
+  background-color: #ffffff;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+	</style>
 <head>
 	<title>Биография ИЧук</title>
 </head>
 <body>
 	<header>
-		<img src="ichuk.jpg" alt="Логотип">
-		<h1><center>ИЧук</h1></h1>
+		<nav>
+    <ul>
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">О нас</a></li>
+      <li><a href="#">Услуги</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+  </nav>
+  <div class="logo">
+    <img src="logo.png" alt="Логотип">
+  </div>
 	</header>
 
 	<main>
