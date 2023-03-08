@@ -68,7 +68,19 @@ header {
 	<title>Биография ИЧук</title>
 </head>
 <body>
-	<audio src="yesterday.mp3" autoplay loop></audio>
+	<button onclick="toggleMusic()">Включить/выключить музыку</button>
+<audio id="myMusic" src="music.mp3" autoplay loop></audio>
+<script>
+  var music = document.getElementById("myMusic");
+  function toggleMusic() {
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+</script>
+
 <header>
 		<nav>
     <ul>
