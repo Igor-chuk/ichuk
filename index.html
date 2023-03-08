@@ -68,18 +68,7 @@ header {
 	<title>Биография ИЧук</title>
 </head>
 <body>
-	<button onclick="toggleMusic()">Включить/выключить музыку</button>
-<audio id="myMusic" src="yesterday.mp3" autoplay loop></audio>
-<script>
-  var music = document.getElementById("myMusic");
-  function toggleMusic() {
-    if (music.paused) {
-      music.play();
-    } else {
-      music.pause();
-    }
-  }
-</script>
+	
 
 <header>
 		<nav>
@@ -148,6 +137,18 @@ header {
 	</main>
 
 	<footer>
+		<button onclick="toggleMusic()">Включить/выключить музыку</button>
+<audio id="myMusic" src="yesterday.mp3" autoplay loop></audio>
+<script>
+  var music = document.getElementById("myMusic");
+  function toggleMusic() {
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+</script>
 		<p><center>Person • ИЧук</p></p>
 	</footer>
 </body>
